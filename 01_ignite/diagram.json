@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-nano", "id": "nano", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -13.2,
+      "left": -207.4,
+      "attrs": { "color": "red" }
+    }
+  ],
+  "connections": [
+    [ "led1:A", "nano:2", "green", [ "v9.6", "h153.6", "v-67.2", "h144" ] ],
+    [ "led1:C", "nano:GND.2", "green", [ "v76.8", "h451.6", "v-144", "h-115.2" ] ]
+  ],
+  "dependencies": {}
+}
