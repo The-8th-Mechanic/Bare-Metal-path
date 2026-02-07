@@ -10,3 +10,11 @@ To learn the basics of bare metal programming through simulation on Wokwi starti
 6. Download the ATMEGA328P datasheet
 7. Download a Pin-Out diagram for Arduino Nano to use as a reference.
 8. Find a good resources to learn Bit Twiddling in C or Bare metal programming.
+## PROCEDURES:
+1. Always create a diagram.json file in the folder of your PlatformIO project and paste the diagram.json file in this repo
+2. Always create a wokwi.toml and paste this:
+[wokwi]
+version=1
+firmware=".pio/build/nanoatmega328new/firmware.hex"
+elf=".pio/build/nanoatmega328new/firmware.elf"
+//THE ABOVE IS FOR ARDUINO NANO
