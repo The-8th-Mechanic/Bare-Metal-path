@@ -9,4 +9,4 @@ To learn the basics of bare metal programming through simulation on Wokwi starti
 5. Happy praticing.
 6. Download the ATMEGA328P datasheet
 7. Download a Pin-Out diagram for Arduino Nano to use as a reference.
-8. Find a good resources to learn Bit Twiddling in C/ Bare metal programming.
+8. Find a good resources to learn Bit Twiddling in C or Bare metal programming.
