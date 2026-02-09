@@ -1,18 +1,16 @@
 #include <Arduino.h>
 
-// put function declarations here:
-int myFunction(int, int);
+void setup () {
+DDRD = 0b11111100;
+DDRB = 0b00000011;
+Serial.begin(9600);
 
-void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
-}
+void loop () {
+PORTB |= (1<<2);
+Serial.print("This is using Serial.print");
+Serial.println(PINB);
 
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
 }
