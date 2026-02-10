@@ -74,6 +74,8 @@
     [ "led6:C", "bb2:bn.14", "black", [ "v76.8", "h0.4" ] ],
     [ "led7:C", "bb2:bn.17", "black", [ "v0" ] ],
     [ "led8:C", "bb2:bn.20", "black", [ "v0" ] ],
+    [ "btn1:2.l", "nano:10", "green", [ "h0" ] ],
+    [ "bb2:bn.25", "bb2:bn.41", "black", [ "v0" ] ],
     [ "led1:A", "bb2:3t.a", "", [ "$bb" ] ],
     [ "led1:C", "bb2:2t.a", "", [ "$bb" ] ],
     [ "led2:A", "bb2:15t.a", "", [ "$bb" ] ],
@@ -92,9 +94,7 @@
     [ "led8:C", "bb2:26t.a", "", [ "$bb" ] ],
     [ "btn1:2.l", "bb2:48t.b", "", [ "$bb" ] ],
     [ "btn1:2.r", "bb2:55t.b", "", [ "$bb" ] ],
-    [ "btn1:2.l", "nano:10", "green", [ "h0" ] ],
-    [ "bb2:bn.25", "bb2:bn.41", "black", [ "v0" ] ],
-    [ "btn1:2.r", "bb2:bn.45", "black", [ "h0" ] ]
+    [ "bb2:bn.45", "btn1:1.r", "black", [ "v0" ] ]
   ],
   "dependencies": {}
 }

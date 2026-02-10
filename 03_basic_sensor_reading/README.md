@@ -1,0 +1,24 @@
+# PROJECT 3
+
+## GOALS:
+1. To learn to read the values of register 
+2. To learn how to extract a single value from the register value
+3. To lean how to enable the internal pull_up resistor of a pin
+4. To learn how to read a basic sensor (Pushbutton).
+
+NOTE THIS PROJECT IS SIMPLY A CONTINUATION OF PROJECT 2 (SEQUENCED LED). SO, IT'S ADVISABLE TO CHECK IT OUT, COS THE EXPLANATIONS TO LED SEQUENCE IS THERE. 
+
+
+# HERE IS AN OVERVIEW OF HOW THE PROJECT WORKS:
+THE PROJECT WORKS BY SETTING A PIN TO BE ALWAYS HIGH(5V). THERE IS A PUSHBUTTON CONNECTED TO THE PIN (D10 AKA PB2), AND THE OTHER END OF THE PUSHBUTTON IS CONNECTED TO THE GROUND.
+
+WHEN, WE DO NOT PRESS THE PUSHBUTTON, AND WE READ THE VALUE AT THE PUSHBUTTON, WE WILL GET A VALUE OF 4 (NOTE THAT THIS 4 IS THE VALUE OF ALL THE PINS IN THE REGISTER B.)
+
+THIS VALUE OF 4(REGISTER VALUE NOT PARTICULAR PIN VALUE),IS THE SAME AS
+0000 0100. FROM INARY TO DECIMAL CONDITION, 0000 0100 IS EQUALS TO DECIMAL 4. SO, WHAT THE OPERATOR "PINx" (WHERE x CAN BE FOR REGISTER B,C OR D) DOES, IS TO SIMPLY ADD ALL VALUES OF PINS IN A REGISTER THAT ARE HIGH, AND GVE IT TO US AS A DECIMAL.
+
+SO, LOOKING AT "0000 0100", U CAN SEE THAT INDEX 2( AKA PB2 OR D2) IS HIGH (THE ARDUINO IS SENDING 5V TO IT. THAT IS, IT IS USING AN INTERNAL PULL-UP RESISTOR TO MAKE IT VOLTAGE 5V).
+
+so, we want to check for when PB2 is LOW/0. the only way to make it low, is to simply press the pushbutton connected to PB2, and current will flow from it to the ground (This will cause the voltage to fall to 0,and we will read the value as 0) and this will be denoted by lighting up the LED sequence.
+
+HEAD OVER TO main.cpp to read and understand the code.
