@@ -18,7 +18,7 @@ void loop() {
 int PD4_value=PIND & (1<<PD4);
 /*
 Read the value of pin 4,using bitwise logic.
-check project 2 on button sensor, to understand the operation
+check project 3 on button sensor, to understand the operation
 
 PIN 4 IS THE PIN CONNECTING THE RED BUTTON, WHICH INCREASES THE LED BRGHTNESS
 */
