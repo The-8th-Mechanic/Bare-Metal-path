@@ -1,0 +1,43 @@
+{
+
+  "version": 1,
+
+  "author": "Anonymous maker",
+
+  "editor": "wokwi",
+
+  "parts": [
+
+    { "type": "wokwi-arduino-nano", "id": "nano", "top": 0, "left": 0, "attrs": {} },
+
+    {
+
+      "type": "wokwi-potentiometer",
+
+      "id": "pot1",
+
+      "top": 1,
+
+      "left": 257.9,
+
+      "rotate": 90,
+
+      "attrs": {}
+
+    }
+
+  ],
+
+  "connections": [
+
+    [ "pot1:GND", "nano:GND.2", "black", [ "h-44.6", "v-106.8", "h-76.8" ] ],
+
+    [ "nano:VIN", "pot1:VCC", "red", [ "v72", "h66.7", "v-86.4" ] ],
+
+    [ "nano:A0", "pot1:SIG", "green", [ "v100.8", "h191.5", "v-124.8" ] ]
+
+  ],
+
+  "dependencies": {}
+
+}
